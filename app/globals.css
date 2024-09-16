@@ -1,27 +1,81 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Product List */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center align the products */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Product Card */
+.product-card {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+  background-color: #fff; /* Background color for better contrast */
+  position: relative; /* Required for button and price positioning */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Product Image */
+.product-card img {
+  border-radius: 5px;
+  width: 100%; /* Full width for consistency */
+  height: 200px; /* Fixed height */
+  object-fit: contain; /* Ensures the entire image is visible */
+  overflow: hidden; /* Hide any overflowed content */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Product Title */
+.product-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333; /* Darker color for better readability */
+}
+
+/* Product Description */
+.product-card p {
+  font-size: 0.9em; /* Slightly smaller font size for descriptions */
+  line-height: 1.6; /* Improved line spacing */
+  color: #555; /* Lighter color for description text */
+  margin: 0; /* Remove default margin for better control */
+  text-align: left; /* Align text to the left for readability */
+  overflow: hidden; /* Ensure content doesn’t overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+  display: -webkit-box; /* Support for multiline truncation */
+  -webkit-line-clamp: 6; /* Control the number of visible lines */
+  -webkit-box-orient: vertical; /* Vertical orientation for multiline truncation */
+  padding: 10px 0; /* Add padding for better spacing */
+  flex-grow: 1; /* Allow description to grow and push button down */
+}
+
+/* Product Price and Button Wrapper */
+.product-card .price-button-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack price and button vertically */
+  align-items: flex-end; /* Align items to the right */
+  margin-top: auto; /* Push to the bottom */
+}
+
+/* Product Price */
+.product-card .price {
+  font-size: 1.2em; /* Size for the price */
+  margin-bottom: 10px; /* Distance from the button */
+  font-weight: bold; /* Emphasize the price */
+  color: #333; /* Color for the price */
+}
+
+/* Product Button */
+.product-card a {
+  text-decoration: none;
+  background-color: #0070f3; /* Adjust button color as needed */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
 }

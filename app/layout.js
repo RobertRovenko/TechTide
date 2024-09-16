@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <footer>
-          <p>© 2024 My Tech Review Site. All rights reserved.</p>
+          <p>© 2024 TechTide. All rights reserved.</p>
         </footer>
       </body>
     </html>
