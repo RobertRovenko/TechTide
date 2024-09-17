@@ -1,6 +1,7 @@
 // app/layout.js
 import Navbar from "./components/Navbar";
 import "./globals.css"; // Make sure to import global styles
+import Link from "next/link"; // Import Link for navigation
 
 export default function RootLayout({ children }) {
   return (
@@ -17,6 +18,9 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <footer className="footer">
           <p>© 2024 TechTide. All rights reserved.</p>
+          <p>
+            <Link href="/privacy">Privacy Policy</Link>
+          </p>
         </footer>
       </body>
     </html>

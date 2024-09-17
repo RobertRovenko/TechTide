@@ -1,0 +1,31 @@
+/* PrivacyPolicy.module.css */
+.container {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    max-width: 800px; /* Center align and limit the width */
+    margin: 0 auto; /* Center align the container */
+  }
+  
+  .header {
+    font-size: 2.5em; /* Larger size for the header */
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center align the header text */
+  }
+  
+  .paragraph {
+    font-size: 1.1em; /* Slightly larger font size for readability */
+    line-height: 1.8; /* More space between lines */
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .link {
+    color: #0070f3; /* Link color */
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
