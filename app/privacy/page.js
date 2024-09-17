@@ -22,11 +22,6 @@ export default function PrivacyPolicy() {
         If you have any questions regarding our privacy practices, please
         contact us via the contact information provided on this site.
       </p>
-      <p className={styles.paragraph}>
-        <a href="/contact" className={styles.link}>
-          Contact Us
-        </a>
-      </p>
     </div>
   );
 }

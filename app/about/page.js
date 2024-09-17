@@ -32,12 +32,9 @@ export default function About() {
       <section className={styles.section}>
         <h2 className={styles.subtitle}>Privacy and Disclaimer</h2>
         <p className={styles.text}>
-          We value your privacy. TechTide does not collect any personal data
-          from our visitors. Our site is designed to provide you with valuable
-          information without compromising your privacy. Please note that we are
-          not responsible for the products linked on Amazon. For
-          product-specific issues, please contact the respective sellers
-          directly.
+          Please note that we are not responsible for the products linked on
+          Amazon. For product-specific issues, please contact the respective
+          sellers directly.
         </p>
       </section>
       <footer className={styles.footer}>
