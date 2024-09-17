@@ -1,9 +1,38 @@
 /* Product List */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
+h1, p {
+  text-align: center; /* Center text */
+}
+
+/* Optionally add some spacing */
+h1 {
+  margin-top: 20px; /* Add some space at the top */
+}
+
+p {
+  margin-bottom: 40px; /* Add some space below */
+}
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center; /* Center align the products */
+  font-family: 'Roboto', sans-serif;
+
 }
 
 /* Product Card */
@@ -57,7 +86,7 @@
 .product-card .price-button-wrapper {
   display: flex;
   flex-direction: column; /* Stack price and button vertically */
-  align-items: flex-end; /* Align items to the right */
+  align-items: center; /* Align items to the right */
   margin-top: auto; /* Push to the bottom */
 }
 
@@ -78,4 +107,12 @@
   border-radius: 5px;
   display: block;
   text-align: center;
+}
+
+/* In your CSS file */
+.footer {
+  padding-top: 20px; /* Padding inside the footer */
+  text-align: center; /* Center-align the text */
+  margin-top: 40px; /* Add space above the footer */
+  font-family: 'Roboto', sans-serif; /* Optional: Use Roboto */
 }

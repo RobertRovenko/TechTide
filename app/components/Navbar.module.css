@@ -1,25 +1,45 @@
-/* app/components/Navbar.module.css */
+/* Import the Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Navbar Styles */
 .navbar {
-    background-color: #333;
-    padding: 1rem;
-  }
-  
-  .navList {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navItem a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-  }
-  
-  .navItem a:hover {
-    background-color: #555;
-    border-radius: 4px;
-  }
-  
+  background-color: #f8f8f8; /* Example background */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+/* Nav Icon */
+.navIcon {
+  margin-right: 15px; /* Add spacing between the icon and the nav items */
+  display: flex;
+  align-items: center; /* Center icon vertically */
+}
+
+/* Nav List */
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 75px;
+  font-family: 'Roboto', sans-serif; /* Apply Roboto */
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Center list items vertically */
+}
+
+/* Nav Item */
+.navItem {
+  font-size: 1.1em; /* Adjust size */
+  font-weight: 500; /* Medium weight for the Roboto font */
+}
+
+.navItem a {
+  color: #333; /* Text color */
+  text-decoration: none;
+  display: flex;
+  align-items: center; /* Center text vertically */
+}
+
+.navItem a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}

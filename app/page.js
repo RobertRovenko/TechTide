@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <h1>Welcome to Tech Tide</h1>
-      <p>Check out our latest product reviews below!</p>
+      <p>Check out our top Amazon Products!</p>
 
       <div className="product-list">
         {products.map((product) => (
