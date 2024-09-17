@@ -5,7 +5,6 @@ export default function Home() {
     <div>
       <h1>Welcome to Tech Tide</h1>
       <p>Check out our top Amazon Products!</p>
-
       <div className="product-list">
         {products.map((product) => (
           <div key={product.id} className="product-card">
