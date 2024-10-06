@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "cover-image": "url('/images/coverimage.jpg')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

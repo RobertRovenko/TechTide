@@ -3,8 +3,17 @@ import products from "../app/data/products"; // Import the product array
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to Tech Tide</h1>
-      <p>Check out our top Amazon Products!</p>
+      <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/coverimage.jpg')" }}
+        ></div>
+        <div className="relative z-10 text-center p-8 text-white bg-black bg-opacity-50">
+          <h1 className="text-5xl font-bold mb-4">Welcome to Tech Tide</h1>
+          <p className="text-xl">Check out our top Amazon Products!</p>
+        </div>
+      </div>
+
       <div className="product-list">
         {products.map((product) => (
           <div key={product.id} className="product-card">
